@@ -7,7 +7,6 @@
 
   <link rel="stylesheet" href="styles.css" />
   <script src="//cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js" type="text/javascript" charset="utf-8"></script>
-  <script src="cats.js" type="text/javascript" charset="utf-8"></script>
 
 </head>
 
@@ -16,8 +15,26 @@
 
   </div>
   <div id="chosenCat">
+    <p id="timesClicked"></p>
+    <img id="choice" src="" alt="" />
+  </div>
 
+  <div id="admin">
+    <button id="toggleAdmin">Admin</button>
+    <form style="display:none">
+      <label>Name</label>
+      <input type="text" name="catName" id="catName" value="" />
+      <br/>
+      <label>Image</label>
+      <input type="text" name="catImage" id="catImage" value="" />
+      <br/>
+      <label># clicked</label>
+      <input type="text" name="catClicked" id="catClicked" value="" />
+      <br/>
+      <button type="submit">Save</button>
+    </form>
   </div>
 </body>
+  <script src="cats.js" type="text/javascript" charset="utf-8"></script>
 
 </html>
